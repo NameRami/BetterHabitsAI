@@ -40,24 +40,20 @@ The app is built with **Java and Android XML**, persists data locally with **Roo
 
 ## 📱 App screens
 
-*The images below are labeled placeholders, not screenshots of the running application. Replace each PNG in [`docs/screenshots/`](docs/screenshots/) with a real capture; the README links will update automatically.*
+A look inside the real Android application — from tracking daily mood to getting context-aware coaching and reflecting on your week. Click any screenshot to view it at full resolution.
 
 <table align="center">
   <tr>
-    <td align="center" width="33%"><a href="docs/screenshots/01-goals-and-habits.png"><img src="docs/screenshots/01-goals-and-habits.png" alt="Goals and habits screenshot placeholder" width="190" /></a><br /><b>Goals &amp; Habits</b><br /><sub>Personal setup</sub></td>
-    <td align="center" width="33%"><a href="docs/screenshots/02-dashboard.png"><img src="docs/screenshots/02-dashboard.png" alt="Dashboard screenshot placeholder" width="190" /></a><br /><b>Dashboard</b><br /><sub>Mood trends &amp; stats</sub></td>
-    <td align="center" width="33%"><a href="docs/screenshots/03-daily-check-in.png"><img src="docs/screenshots/03-daily-check-in.png" alt="Daily check-in screenshot placeholder" width="190" /></a><br /><b>Daily Check-in</b><br /><sub>Mood, energy &amp; habits</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="docs/screenshots/04-daily-insights.png"><img src="docs/screenshots/04-daily-insights.png" alt="Daily insights screenshot placeholder" width="190" /></a><br /><b>Daily Insights</b><br /><sub>AI-assisted reflections*</sub></td>
-    <td align="center"><a href="docs/screenshots/05-ai-coach.png"><img src="docs/screenshots/05-ai-coach.png" alt="AI coaching screenshot placeholder" width="190" /></a><br /><b>AI Coach</b><br /><sub>Personalized conversation*</sub></td>
-    <td align="center"><a href="docs/screenshots/06-weekly-report.png"><img src="docs/screenshots/06-weekly-report.png" alt="Weekly report screenshot placeholder" width="190" /></a><br /><b>Weekly Report</b><br /><sub>Seven-day overview*</sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/01-dashboard.jpg"><img src="docs/screenshots/01-dashboard.jpg" alt="BetterHabitsAI dashboard showing journal activity, average mood, and seven-day mood chart" width="190" /></a><br /><b>📊 Dashboard</b><br /><sub>Progress at a glance</sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/02-daily-check-in.jpg"><img src="docs/screenshots/02-daily-check-in.jpg" alt="BetterHabitsAI daily check-in screen with mood, energy and stress ratings" width="190" /></a><br /><b>🌤️ Daily Check-in</b><br /><sub>Track how you feel</sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/03-ai-coach.jpg"><img src="docs/screenshots/03-ai-coach.jpg" alt="BetterHabitsAI AI coach chat screen with goal-aware welcome message and quick prompts" width="190" /></a><br /><b>💬 AI Coach</b><br /><sub>Personalized support*</sub></td>
+    <td align="center" width="25%"><a href="docs/screenshots/04-weekly-report.jpg"><img src="docs/screenshots/04-weekly-report.jpg" alt="BetterHabitsAI weekly insights screen with seven-day reflection and highlights" width="190" /></a><br /><b>📅 Weekly Report</b><br /><sub>Reflect on your week*</sub></td>
   </tr>
 </table>
 
-<sub>*Requires connecting an appropriate secure AI backend.</sub>
+<sub>*The screenshots show a previously configured AI service. In the public GitHub code, AI requests require connecting your own secure backend. Some screenshots retain the original French **Coach de Vie** branding from before the project was renamed to **BetterHabitsAI**.</sub>
 
-**📸 Want to add real screenshots?** See the [step-by-step capture and filename guide](docs/screenshots/README.md). After you create the repository, you can upload the replacement screenshots directly at [GitHub → Upload screenshots](https://github.com/namerami/BetterHabitsAI/upload/main/docs/screenshots).
+**📸 Adding more screenshots:** See the [screenshot guide](docs/screenshots/README.md). To add images on GitHub, use [Upload files → `docs/screenshots/`](https://github.com/namerami/BetterHabitsAI/upload/main/docs/screenshots) after creating the repository.
 
 ## 🛠️ Technology stack
 
@@ -91,7 +87,7 @@ BetterHabitsAI/
 │   └── build.gradle.kts
 ├── docs/
 │   ├── assets/                             # README cover image
-│   └── screenshots/                        # Replaceable screenshot placeholders
+│   └── screenshots/                        # Four real app screenshots + guide
 ├── gradle/                                 # Wrapper + dependency versions
 ├── SECURITY.md
 ├── README.md
@@ -146,7 +142,8 @@ To complete the integration securely:
 - [ ] Privacy/consent onboarding and personal data controls
 - [ ] Opt-in demo data
 - [ ] Database migration tests and expanded UI tests
-- [ ] Add real app screenshots and demo video
+- [x] Add four real app screenshots
+- [ ] Add more screens and a short demo video
 
 ## 📌 Project status
 
