@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0F14"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <!-- ── HEADER ─────────────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="56dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOURNAL QUOTIDIEN"
+                android:textSize="10sp"
+                android:letterSpacing="0.20"
+                android:textColor="#F5C842"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment vas-tu aujourd’hui ?"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#F0EDE8"
+                android:letterSpacing="-0.02"
+                android:lineSpacingMultiplier="1.1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prends un moment pour faire le point avec toi-même"
+                android:textSize="15sp"
+                android:textColor="#9A95A0"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="28dp" />
+
+        </LinearLayout>
+
+        <!-- ── MOOD SECTION ───────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HUMEUR"
+                android:textSize="9sp"
+                android:letterSpacing="0.15"
+                android:textColor="#4A4860"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quel est ton état émotionnel ?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#F0EDE8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Mood scale: horizontal radio group with emoji labels -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/rgMood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Custom styled radio buttons with mood labels -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <RadioButton android:id="@+id/rbLevel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:buttonTint="#F07B6A" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😔" android:textSize="20sp" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bas" android:textSize="10sp" android:textColor="#4A4860" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <RadioButton android:id="@+id/rbLevel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:buttonTint="#F0A060" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😐" android:textSize="20sp" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bof" android:textSize="10sp" android:textColor="#4A4860" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <RadioButton android:id="@+id/rbLevel3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:buttonTint="#F5C842" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🙂" android:textSize="20sp" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" android:textSize="10sp" android:textColor="#4A4860" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <RadioButton android:id="@+id/rbLevel4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:buttonTint="#A8D878" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="😊" android:textSize="20sp" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bien" android:textSize="10sp" android:textColor="#4A4860" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                        <RadioButton android:id="@+id/rbLevel5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:buttonTint="#7EC8A4" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤩" android:textSize="20sp" android:gravity="center" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Super" android:textSize="10sp" android:textColor="#4A4860" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── ENERGY SECTION ─────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ÉNERGIE"
+                android:textSize="9sp"
+                android:letterSpacing="0.15"
+                android:textColor="#4A4860"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quel est ton niveau d’énergie ?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#F0EDE8"
+                android:layout_marginBottom="16dp" />
+
+            <RadioGroup
+                android:id="@+id/rgEnergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rbEnergy1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1" android:gravity="center" android:buttonTint="#F5C842" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbEnergy2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="2" android:gravity="center" android:buttonTint="#F5C842" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbEnergy3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="3" android:gravity="center" android:buttonTint="#F5C842" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbEnergy4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="4" android:gravity="center" android:buttonTint="#F5C842" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbEnergy5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="5" android:gravity="center" android:buttonTint="#F5C842" android:textColor="#9A95A0" android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Épuisé" android:textSize="10sp" android:textColor="#4A4860" android:gravity="center" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="" android:textSize="10sp" android:gravity="center" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="En forme" android:textSize="10sp" android:textColor="#4A4860" android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── STRESS SECTION ─────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRESS"
+                android:textSize="9sp"
+                android:letterSpacing="0.15"
+                android:textColor="#4A4860"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="À quel point te sens-tu stressé ?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#F0EDE8"
+                android:layout_marginBottom="16dp" />
+
+            <RadioGroup
+                android:id="@+id/rgStress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/rbStress1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1" android:gravity="center" android:buttonTint="#F07B6A" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbStress2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="2" android:gravity="center" android:buttonTint="#F07B6A" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbStress3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="3" android:gravity="center" android:buttonTint="#F07B6A" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbStress4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="4" android:gravity="center" android:buttonTint="#F07B6A" android:textColor="#9A95A0" android:textSize="14sp" />
+                <RadioButton android:id="@+id/rbStress5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="5" android:gravity="center" android:buttonTint="#F07B6A" android:textColor="#9A95A0" android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Calme" android:textSize="10sp" android:textColor="#4A4860" android:gravity="center" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="" android:textSize="10sp" android:gravity="center" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Très stressé" android:textSize="10sp" android:textColor="#4A4860" android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── TODAY'S HABITS ─────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HABITUDES D’AUJOURD’HUI"
+                android:textSize="9sp"
+                android:letterSpacing="0.15"
+                android:textColor="#4A4860"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qu’as-tu accompli aujourd’hui ?"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#F0EDE8"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:id="@+id/habitsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <!-- ── REFLECTION SECTION ────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_gold"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RÉFLEXION"
+                android:textSize="9sp"
+                android:letterSpacing="0.15"
+                android:textColor="#F5C842"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pensées de fin de journée"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#F0EDE8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Win -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qu’est-ce qui s’est bien passé aujourd’hui ?"
+                android:textSize="12sp"
+                android:textColor="#9A95A0"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etWin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ta victoire du jour..."
+                android:textColorHint="#4A4860"
+                android:textColor="#F0EDE8"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Challenge -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qu’est-ce qui t’a mis au défi ?"
+                android:textSize="12sp"
+                android:textColor="#9A95A0"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etChallenge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="L’obstacle principal..."
+                android:textColorHint="#4A4860"
+                android:textColor="#F0EDE8"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Gratitude -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pour quoi es-tu reconnaissant ?"
+                android:textSize="12sp"
+                android:textColor="#9A95A0"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etGratitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="La gratitude révèle..."
+                android:textColorHint="#4A4860"
+                android:textColor="#F0EDE8"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Tomorrow focus -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priorité n°1 de demain"
+                android:textSize="12sp"
+                android:textColor="#9A95A0"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etTomorrowFocus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ma priorité principale..."
+                android:textColorHint="#4A4860"
+                android:textColor="#F0EDE8"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Free notes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes libres"
+                android:textSize="12sp"
+                android:textColor="#9A95A0"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Autre chose que tu as en tête..."
+                android:textColorHint="#4A4860"
+                android:textColor="#F0EDE8"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:textSize="14sp"
+                android:minLines="4"
+                android:gravity="top" />
+
+        </LinearLayout>
+
+        <!-- ── SAVE BUTTON ─────────────────────────────────────────── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enregistrer et obtenir un coaching →"
+                android:textColor="#1A1200"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/bg_button_primary"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

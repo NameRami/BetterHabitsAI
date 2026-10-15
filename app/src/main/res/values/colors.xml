@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- === COACH DE VIE — LUXURY DARK THEME === -->
+    <!-- Concept: Midnight Atelier — like a personal stylist's journal at 2am -->
+    <!-- Deep navy-blacks, warm champagne gold, soft sage accents -->
+
+    <!-- Base surfaces -->
+    <color name="bg_primary">#0D0F14</color>       <!-- near-black navy -->
+    <color name="bg_surface">#141720</color>        <!-- card surface -->
+    <color name="bg_elevated">#1C2030</color>       <!-- elevated card -->
+    <color name="bg_overlay">#242840</color>        <!-- overlay / input bg -->
+
+    <!-- Gold accent system -->
+    <color name="gold_bright">#F5C842</color>       <!-- primary gold -->
+    <color name="gold_warm">#E8A832</color>         <!-- warm gold -->
+    <color name="gold_muted">#A87820</color>        <!-- muted gold border -->
+    <color name="gold_subtle">#2A2010</color>       <!-- gold tint surface -->
+
+    <!-- Sage / mint accent -->
+    <color name="sage_bright">#7EC8A4</color>       <!-- success, positive -->
+    <color name="sage_muted">#3A6B52</color>        <!-- subtle sage -->
+    <color name="sage_subtle">#0F2A1E</color>       <!-- sage surface -->
+
+    <!-- Coral accent -->
+    <color name="coral_bright">#F07B6A</color>      <!-- stress / warning -->
+    <color name="coral_muted">#7A3A30</color>       <!-- subtle coral border -->
+    <color name="coral_subtle">#2A1210</color>      <!-- coral surface -->
+
+    <!-- Text system -->
+    <color name="text_primary">#F0EDE8</color>      <!-- warm white -->
+    <color name="text_secondary">#9A95A0</color>    <!-- muted -->
+    <color name="text_hint">#4A4860</color>         <!-- placeholder / ghost -->
+    <color name="text_on_gold">#1A1200</color>      <!-- dark text on gold bg -->
+    <color name="text_on_sage">#061A10</color>      <!-- dark text on sage bg -->
+
+    <!-- Borders -->
+    <color name="border_subtle">#1E2238</color>     <!-- very subtle divider -->
+    <color name="border_default">#2C3050</color>    <!-- default border -->
+    <color name="border_gold">#3A2C10</color>       <!-- gold-tinted border -->
+
+    <!-- Status colors -->
+    <color name="status_excellent">#7EC8A4</color>  <!-- mood 5 -->
+    <color name="status_good">#A8D878</color>       <!-- mood 4 -->
+    <color name="status_neutral">#F5C842</color>    <!-- mood 3 -->
+    <color name="status_low">#F0A060</color>        <!-- mood 2 -->
+    <color name="status_poor">#F07B6A</color>       <!-- mood 1 -->
+
+    <!-- Chart colors -->
+    <color name="chart_line">#F5C842</color>
+    <color name="chart_fill">#2A2010</color>
+    <color name="chart_grid">#1E2238</color>
+
+    <!-- White transparent -->
+    <color name="white_8">#14FFFFFF</color>
+    <color name="white_12">#1EFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="gold_20">#33F5C842</color>
+    <color name="gold_10">#1AF5C842</color>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CoachTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/gold_bright</item>
+        <item name="colorPrimaryVariant">@color/gold_warm</item>
+        <item name="colorOnPrimary">@color/text_on_gold</item>
+        <item name="colorSecondary">@color/sage_bright</item>
+        <item name="colorOnSecondary">@color/text_on_sage</item>
+        <item name="colorSurface">@color/bg_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="editTextStyle">@style/CoachEditText</item>
+        <item name="buttonStyle">@style/CoachButton</item>
+        <item name="android:statusBarColor">@color/bg_primary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Coach.Text.Display" parent="">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Coach.Text.Headline" parent="">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Coach.Text.Title" parent="">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Coach.Text.Label" parent="">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/gold_bright</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Coach.Text.Body" parent="">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.55</item>
+    </style>
+
+    <style name="Coach.Text.Caption" parent="">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Coach.Card" parent="">
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="Coach.Card.Gold" parent="">
+        <item name="android:background">@drawable/bg_card_gold</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="Coach.Card.Sage" parent="">
+        <item name="android:background">@drawable/bg_card_sage</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="CoachButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">@color/text_on_gold</item>
+        <item name="backgroundTint">@color/gold_bright</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Coach.Button.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="strokeColor">@color/border_default</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="backgroundTint">@color/bg_elevated</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Coach.Button.Ghost" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gold_bright</item>
+    </style>
+
+    <style name="CoachEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+    </style>
+
+    <style name="Coach.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:buttonTint">@color/gold_bright</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="Coach.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:buttonTint">@color/gold_bright</item>
+        <item name="android:paddingStart">8dp</item>
+    </style>
+
+    <style name="Coach.Divider" parent="">
+        <item name="android:background">@color/border_subtle</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+</resources>
